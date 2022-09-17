@@ -1,9 +1,13 @@
+import Spline from "@splinetool/react-spline";
 import React from "react";
 
 function Home() {
   return (
     <>
-      <h1> hello!</h1>
+      <Spline
+        scene="https://prod.spline.design/1ZSN0NOpjyVsaPIf/scene.splinecode"
+        className="sculpture"
+      />
     </>
   );
 }
