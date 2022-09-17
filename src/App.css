@@ -1,9 +1,37 @@
 body {
   margin: 0;
+  background-color: black;
 }
 
 .sculpture {
   position: fixed;
-  top: 0px;
-  left: 0px;
+  top: -0px;
+  right: 0px;
+  z-index: 3;
+}
+
+.green-accent {
+  width: 640px;
+  height: 70px;
+  background-color: rgba(172, 255, 47, 0.247);
+  position: absolute;
+  right: 0px;
+  top: 450px;
+  z-index: 4;
+}
+.home-outer {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+.left-banner {
+  width: 50%;
+  height: 100%;
+  outline: 1px solid red;
+}
+.right-banner {
+  width: 50%;
+  height: 100%;
+  outline: 1px solid blue;
 }
