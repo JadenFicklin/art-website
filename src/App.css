@@ -5,8 +5,8 @@ body {
 
 .sculpture {
   position: fixed;
-  top: -0px;
-  right: 0px;
+  top: 0px;
+  right: -250px;
   z-index: 3;
 }
 
@@ -19,6 +19,15 @@ body {
   top: 450px;
   z-index: 4;
 }
+.blue-accent {
+  width: 740px;
+  height: 70px;
+  background-color: rgba(47, 206, 255, 0.247);
+  position: absolute;
+  right: 0px;
+  top: 550px;
+  z-index: 2;
+}
 .home-outer {
   width: 100%;
   height: 100vh;
@@ -26,12 +35,11 @@ body {
   flex-wrap: wrap;
 }
 .left-banner {
-  width: 50%;
+  width: 55%;
   height: 100%;
-  outline: 1px solid red;
+  background-color: rgb(3, 3, 3);
 }
 .right-banner {
-  width: 50%;
+  width: 45%;
   height: 100%;
-  outline: 1px solid blue;
 }

@@ -12,6 +12,7 @@ function Home() {
         <div className="left-banner"></div>
         <div className="right-banner">
           <div className="green-accent"></div>
+          <div className="blue-accent"></div>
         </div>
       </div>
     </>
