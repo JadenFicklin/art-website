@@ -1,8 +1,12 @@
 import Spline from "@splinetool/react-spline";
-import React from "react";
+import React, { useState } from "react";
 import { BsArrowUpRight } from "react-icons/bs";
 
 function Home() {
+  const [myClicked, setMyClicked] = useState(false);
+  const [myClickedLoaded, setMyClickedLoaded] = useState(false);
+
+  // mouse functionality
   let mouseCursor = document.querySelector(".cursor");
 
   window.addEventListener("mousemove", cursor);
@@ -10,6 +14,17 @@ function Home() {
     mouseCursor.style.top = e.pageY + "px";
     mouseCursor.style.left = e.pageX + "px";
   }
+
+  const handleLogoClick = () => {
+    setMyClicked(false);
+    setMyClickedLoaded(false);
+  };
+  const handleButtonClick = () => {
+    setMyClicked(true);
+    setTimeout(() => {
+      setMyClickedLoaded(true);
+    }, 1000);
+  };
 
   return (
     <>
@@ -122,13 +137,14 @@ function Home() {
         diam maecenas ultricies. Risus commodo viverra maecenas accumsan lacus
         vel.
       </div>
-      <div className="button">
+      <div className="button" onClick={handleButtonClick}>
         <BsArrowUpRight className="icon" />
       </div>
       <div className="cursor"></div>
+
       <div className="home-outer">
         <nav className="nav">
-          <div className="logo">
+          <div className="logo" onClick={handleLogoClick}>
             Art<br></br> Gallery
           </div>
           <div className="nav-middle">
@@ -137,6 +153,7 @@ function Home() {
             <div className="contact-us">Contact Us</div>
           </div>
         </nav>
+
         <div className="left-banner">
           <div className="left-inner-banner">
             <div className="header">Explore Art around the world</div>
@@ -150,6 +167,12 @@ function Home() {
           <div className="green-accent"></div>
           <div className="blue-accent"></div>
         </div>
+      </div>
+
+      <div className={myClicked ? "art-outer-after" : "art-outer-before"}>
+        <div
+          className={myClickedLoaded ? "art-inner-after" : "art-inner-before"}
+        ></div>
       </div>
     </>
   );
