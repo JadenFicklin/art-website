@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;900&family=Spline+Sans+Mono:wght@700&family=Spline+Sans:wght@400;600&display=swap");
+
 body {
   margin: 0;
   background-color: black;
@@ -8,6 +10,77 @@ body {
   top: 0px;
   right: -250px;
   z-index: 3;
+}
+.background-text {
+  clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+  position: fixed;
+  color: white;
+  font-size: 18px;
+  text-align: end;
+  height: 850px;
+  width: 1000px;
+  bottom: 0px;
+  right: 0px;
+  -webkit-mask-image: -webkit-gradient(
+    linear,
+    right top,
+    left bottom,
+    from(rgba(0, 0, 0, 0.3)),
+    to(rgba(0, 0, 0, 0))
+  );
+}
+.home-outer {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+.nav {
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+}
+.left-banner {
+  width: 55%;
+  height: 100%;
+  background-color: rgb(2, 2, 2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.left-inner-banner {
+  width: 450px;
+  height: 40%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-left: -20%;
+  margin-top: -100px;
+}
+.header,
+.sub-header {
+  color: white;
+  font-family: "Merriweather", serif;
+}
+.header {
+  width: 450px;
+  height: 300px;
+  font-size: 70px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 3px;
+  font-weight: 600;
+}
+.sub-header {
+  font-weight: lighter;
+  color: rgba(255, 255, 255, 0.432);
+}
+
+.right-banner {
+  width: 30%;
+  height: 100%;
 }
 
 .green-accent {
@@ -20,26 +93,11 @@ body {
   z-index: 4;
 }
 .blue-accent {
-  width: 740px;
-  height: 70px;
+  width: 940px;
+  height: 150px;
   background-color: rgba(47, 206, 255, 0.247);
   position: absolute;
   right: 0px;
-  top: 550px;
+  top: 700px;
   z-index: 2;
-}
-.home-outer {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  flex-wrap: wrap;
-}
-.left-banner {
-  width: 55%;
-  height: 100%;
-  background-color: rgb(3, 3, 3);
-}
-.right-banner {
-  width: 45%;
-  height: 100%;
 }
