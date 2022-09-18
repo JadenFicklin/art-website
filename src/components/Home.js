@@ -1,5 +1,6 @@
 import Spline from "@splinetool/react-spline";
 import React from "react";
+import { BsArrowUpRight } from "react-icons/bs";
 
 function Home() {
   return (
@@ -112,6 +113,9 @@ function Home() {
         dignissim convallis aenean et. Vulputate ut pharetra sit amet aliquam id
         diam maecenas ultricies. Risus commodo viverra maecenas accumsan lacus
         vel.
+      </div>
+      <div className="button">
+        <BsArrowUpRight className="icon" />
       </div>
       <div className="home-outer">
         <nav className="nav">
