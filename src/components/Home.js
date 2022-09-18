@@ -115,10 +115,14 @@ function Home() {
       </div>
       <div className="home-outer">
         <nav className="nav">
-          <div className="logo">Art Gallery</div>
-          <div className="about">About</div>
-          <div className="art">Art</div>
-          <div className="contact-us">Contact Us</div>
+          <div className="logo">
+            Art<br></br> Gallery
+          </div>
+          <div className="nav-middle">
+            <div className="about">About</div>
+            <div className="art">Art</div>
+            <div className="contact-us">Contact Us</div>
+          </div>
         </nav>
         <div className="left-banner">
           <div className="left-inner-banner">
