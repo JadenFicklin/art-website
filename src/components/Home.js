@@ -5,6 +5,15 @@ import { BsArrowUpRight } from "react-icons/bs";
 function Home() {
   const [myClicked, setMyClicked] = useState(false);
   const [myClickedLoaded, setMyClickedLoaded] = useState(false);
+  const [myClickedLoadedTwo, setMyClickedLoadedTwo] = useState(false);
+  const [myClickedLoadedThree, setMyClickedLoadedThree] = useState(false);
+  const [myClickedLoadedFour, setMyClickedLoadedFour] = useState(false);
+  const [myClickedLoadedFive, setMyClickedLoadedFive] = useState(false);
+  const [myClickedLoadedSix, setMyClickedLoadedSix] = useState(false);
+  const [myClickedLoadedSeven, setMyClickedLoadedSeven] = useState(false);
+  const [myClickedLoadedEight, setMyClickedLoadedEight] = useState(false);
+  const [myClickedLoadedNine, setMyClickedLoadedNine] = useState(false);
+  const [myClickedLoadedTen, setMyClickedLoadedTen] = useState(false);
 
   // mouse functionality
   let mouseCursor = document.querySelector(".cursor");
@@ -18,12 +27,48 @@ function Home() {
   const handleLogoClick = () => {
     setMyClicked(false);
     setMyClickedLoaded(false);
+    setMyClickedLoadedTwo(false);
+    setMyClickedLoadedThree(false);
+    setMyClickedLoadedFour(false);
+    setMyClickedLoadedFive(false);
+    setMyClickedLoadedSix(false);
+    setMyClickedLoadedSeven(false);
+    setMyClickedLoadedEight(false);
+    setMyClickedLoadedNine(false);
+    setMyClickedLoadedTen(false);
   };
   const handleButtonClick = () => {
     setMyClicked(true);
     setTimeout(() => {
       setMyClickedLoaded(true);
     }, 1000);
+    setTimeout(() => {
+      setMyClickedLoadedTwo(true);
+    }, 1100);
+    setTimeout(() => {
+      setMyClickedLoadedThree(true);
+    }, 1200);
+    setTimeout(() => {
+      setMyClickedLoadedFour(true);
+    }, 1300);
+    setTimeout(() => {
+      setMyClickedLoadedFive(true);
+    }, 1400);
+    setTimeout(() => {
+      setMyClickedLoadedSix(true);
+    }, 1500);
+    setTimeout(() => {
+      setMyClickedLoadedSeven(true);
+    }, 1600);
+    setTimeout(() => {
+      setMyClickedLoadedEight(true);
+    }, 1700);
+    setTimeout(() => {
+      setMyClickedLoadedNine(true);
+    }, 1800);
+    setTimeout(() => {
+      setMyClickedLoadedTen(true);
+    }, 1900);
   };
 
   return (
@@ -171,7 +216,74 @@ function Home() {
 
       <div className={myClicked ? "art-outer-after" : "art-outer-before"}>
         <div
-          className={myClickedLoaded ? "art-inner-after" : "art-inner-before"}
+          className={
+            myClickedLoaded
+              ? "art-inner-after one"
+              : "art-inner-before after-one "
+          }
+        ></div>
+        <div
+          className={
+            myClickedLoadedTwo
+              ? "art-inner-after two"
+              : "art-inner-before after-two "
+          }
+        ></div>
+        <div
+          className={
+            myClickedLoadedThree
+              ? "art-inner-after three"
+              : "art-inner-before after-three "
+          }
+        ></div>
+        <div
+          className={
+            myClickedLoadedFour
+              ? "art-inner-after four"
+              : "art-inner-before after-four "
+          }
+        ></div>
+        <div
+          className={
+            myClickedLoadedFive
+              ? "art-inner-after five"
+              : "art-inner-before after-five "
+          }
+        ></div>
+        <div
+          className={
+            myClickedLoadedSix
+              ? "art-inner-after six"
+              : "art-inner-before after-six "
+          }
+        ></div>
+        <div
+          className={
+            myClickedLoadedSeven
+              ? "art-inner-after seven"
+              : "art-inner-before after-seven "
+          }
+        ></div>
+        <div
+          className={
+            myClickedLoadedEight
+              ? "art-inner-after eight"
+              : "art-inner-before after-eight "
+          }
+        ></div>
+        <div
+          className={
+            myClickedLoadedNine
+              ? "art-inner-after nine"
+              : "art-inner-before after-nine "
+          }
+        ></div>
+        <div
+          className={
+            myClickedLoadedTen
+              ? "art-inner-after ten"
+              : "art-inner-before after-ten "
+          }
         ></div>
       </div>
     </>

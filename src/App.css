@@ -4,7 +4,7 @@ body {
   /* background-color: black; */
   background-color: rgb(2, 2, 2);
   overflow: hidden;
-  /* cursor: none; */
+  cursor: none;
 }
 .sculpture {
   position: fixed;
@@ -99,9 +99,9 @@ body {
 }
 
 .left-banner {
-  width: 60%;
+  width: 37%;
   height: 100%;
-  background-color: rgb(2, 2, 2);
+  background-color: rgb(5, 5, 5);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -188,7 +188,7 @@ body {
   position: absolute;
   bottom: 0px;
   left: 0px;
-  background-color: blue;
+  background-color: rgb(5, 5, 5);
   transition: 1s ease;
 }
 .art-outer-after {
@@ -197,28 +197,106 @@ body {
   position: fixed;
   bottom: 0px;
   left: 0px;
-  background-color: blue;
   transition: 1s;
   z-index: 103;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  background-color: rgb(5, 5, 5);
 }
 .art-inner-before {
-  width: 200px;
+  width: 10%;
   height: 0px;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  background-color: red;
-  transition: 0.5s;
+  transition: 3s;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.937);
 }
 .art-inner-after {
-  width: 200px;
-  height: 800px;
-  position: absolute;
+  width: 10%;
+  height: 100%;
+  transition: 3s;
+}
+
+.one {
+  left: 0px;
   top: 0px;
-  right: 0px;
-  background-color: red;
+  background-image: url("../src/assets/san\ petronio\ -\ jacopo\ della\ quercia.jpg");
+}
+.two {
+  left: 10%;
+  top: 0px;
+  background-image: url("../src/assets/ecstasy\ of\ saint\ teresa\ -\ bernini.jpg");
+}
+.three {
+  left: 20%;
+  top: 0px;
+  background-image: url("../src/assets/Equestrian\ statue\ -\ leonardo\ da\ vinci.jpg");
+}
+.four {
+  left: 30%;
+  top: 0px;
+  background-image: url("../src/assets/jesus-705886.jpg");
+}
+.five {
+  left: 40%;
+  top: 0px;
+  background-image: url("../src/assets/michele-caliani.jpg");
+}
+.six {
+  left: 50%;
+  top: 0px;
+  background-image: url("../src/assets/nike\ -\ pythokritos.jpg");
+}
+.seven {
+  left: 60%;
+  top: 0px;
+  background-image: url("../src/assets/pieta\ -\ Michelangelo.jpg");
+}
+.eight {
+  left: 70%;
+  top: 0px;
+  background-image: url("../src/assets/Trevi\ Fountain\ -\ Bernini.jpg");
+}
+.nine {
+  left: 80%;
+  top: 0px;
+  background-image: url("../src/assets/cemetery-2698731.jpg");
+}
+.ten {
+  left: 90%;
+  background-image: url("../src/assets/stories\ of\ joseph\ -\ Lorenzo\ Ghiberti.jpg");
+}
+.one,
+.two,
+.three,
+.four,
+.five,
+.six,
+.seven,
+.eight,
+.nine,
+.ten {
+  position: absolute;
+  width: 10%;
   transition: 1s;
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: none;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.937);
+}
+.one:hover,
+.two:hover,
+.three:hover,
+.four:hover,
+.five:hover,
+.six:hover,
+.seven:hover,
+.eight:hover,
+.nine:hover,
+.ten:hover {
+  position: absolute;
+  z-index: 500;
+  width: 20%;
+  margin-left: -5%;
+  /* transition: 0.3s; */
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0);
 }
