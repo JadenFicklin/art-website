@@ -3,6 +3,16 @@ import React from "react";
 import { BsArrowUpRight } from "react-icons/bs";
 
 function Home() {
+  let mouseCursor = document.querySelector(".cursor");
+  let navLinks = document.querySelectorAll(".nav-links li");
+
+  window.addEventListener("mousemove", cursor);
+
+  function cursor(e) {
+    mouseCursor.style.top = e.pageY + "px";
+    mouseCursor.style.left = e.pageX + "px";
+  }
+
   return (
     <>
       <Spline
@@ -117,13 +127,14 @@ function Home() {
       <div className="button">
         <BsArrowUpRight className="icon" />
       </div>
+      <div className="cursor"></div>
       <div className="home-outer">
         <nav className="nav">
           <div className="logo">
             Art<br></br> Gallery
           </div>
           <div className="nav-middle">
-            <div className="about">About</div>
+            <div className="about nav-links">About</div>
             <div className="art">Art</div>
             <div className="contact-us">Contact Us</div>
           </div>
