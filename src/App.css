@@ -733,7 +733,6 @@ body {
   .art-outer-after {
     width: 100%;
     height: 100vh;
-    border: 1px solid red;
     position: fixed;
     bottom: 0px;
     left: 0px;
@@ -774,7 +773,6 @@ body {
     width: 100px;
     height: 30%;
     transition: 3s;
-    border: 1px solid red;
   }
   .box-header {
     font-size: 40px;
