@@ -618,7 +618,8 @@ body {
     height: 110%;
   }
 }
-@media screen and (max-width: 500px) {
+
+@media screen and (max-width: 400px) {
   .sculpture {
     transform: scale(0.4) translateX(900px) translateY(550px);
     transform-origin: top;
@@ -656,8 +657,8 @@ body {
   .background-text {
     width: 400px;
     height: 400px;
-    top: 235px;
-    left: 0px;
+    top: 340px;
+    right: 0px;
   }
   .button {
     width: 15px;
@@ -680,7 +681,68 @@ body {
   }
 }
 
-/* @media (max-width: 1600px) {
-  transform: scale(0.8) translateX(200px);
-  transform-origin: top;
-} */
+/* art gallery  */
+@media screen and (max-width: 600px) {
+  .art-outer-after {
+    width: 100%;
+    height: 100vh;
+    border: 1px solid red;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    transition: 1s;
+    z-index: 103;
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    /* justify-content: space-between; */
+    background-color: rgb(5, 5, 5);
+  }
+  .one,
+  .two,
+  .three,
+  .four,
+  .five,
+  .six,
+  .seven,
+  .eight,
+  .nine,
+  .ten {
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    transition: 1s;
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: none;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.737);
+  }
+
+  .art-inner-before {
+    width: 100%;
+    height: 30%;
+    transition: 3s;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.937);
+  }
+  .art-inner-after {
+    width: 100px;
+    height: 30%;
+    transition: 3s;
+    border: 1px solid red;
+  }
+  .box-header {
+    font-size: 40px;
+    margin-left: 10px;
+  }
+  .box-name {
+    font-size: 20px;
+    position: relative;
+    top: -50px;
+    left: 10px;
+  }
+  .box-subtext {
+    width: 90%;
+    margin-left: 10px;
+    font-size: 12px;
+    margin-top: 50px;
+  }
+}
