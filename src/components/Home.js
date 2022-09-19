@@ -320,7 +320,9 @@ function Home() {
           </div>
           <div className="nav-middle">
             <div className="about nav-links">About</div>
-            <div className="art">Art</div>
+            <div className="art" onClick={handleButtonClick}>
+              Art
+            </div>
             <div className="contact-us">Contact Us</div>
           </div>
         </nav>
