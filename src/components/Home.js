@@ -354,17 +354,19 @@ function Home() {
           <div className="logo" onClick={handleLogoClick}>
             Art<br></br> Gallery
           </div>
-          <div className="nav-middle">
-            <div className="about nav-links" onClick={handleAboutClick}>
-              About
+          {!myClicked ? (
+            <div className="nav-middle">
+              <div className="about nav-links" onClick={handleAboutClick}>
+                About
+              </div>
+              <div className="art" onClick={handleButtonClick}>
+                Art
+              </div>
+              <div className="contact-us" onClick={handleContactUsClick}>
+                Contact Us
+              </div>
             </div>
-            <div className="art" onClick={handleButtonClick}>
-              Art
-            </div>
-            <div className="contact-us" onClick={handleContactUsClick}>
-              Contact Us
-            </div>
-          </div>
+          ) : null}
         </nav>
 
         <div className={home ? "left-banner" : "home-false"}>
