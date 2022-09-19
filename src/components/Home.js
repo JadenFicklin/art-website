@@ -93,12 +93,27 @@ function Home() {
     }, 1900);
   };
 
+  const handleBackButtonClick = () => {
+    setFullOne(false);
+    setFullTwo(false);
+    setFullThree(false);
+    setFullFour(false);
+    setFullFive(false);
+    setFullSix(false);
+    setFullSeven(false);
+    setFullEight(false);
+    setFullNine(false);
+    setFullTen(false);
+  };
+
   const pictureFullStylingOne = {
     position: fullOne && "absolute",
     left: fullOne && "0px",
     top: fullOne && "0px",
     width: fullOne && "50%",
     marginLeft: fullOne && "0%",
+    zIndex: fullOne && "500",
+    boxShadow: fullOne && "inset 0 0 0 1000px rgba(0, 0, 0, .20)",
   };
   const pictureFullStylingTwo = {
     position: fullTwo && "absolute",
@@ -106,6 +121,8 @@ function Home() {
     top: fullTwo && "0px",
     width: fullTwo && "50%",
     marginLeft: fullTwo && "0%",
+    zIndex: fullTwo && "500",
+    boxShadow: fullTwo && "inset 0 0 0 1000px rgba(0, 0, 0, .20)",
   };
   const pictureFullStylingThree = {
     position: fullThree && "absolute",
@@ -113,6 +130,8 @@ function Home() {
     top: fullThree && "0px",
     width: fullThree && "50%",
     marginLeft: fullThree && "0%",
+    zIndex: fullThree && "500",
+    boxShadow: fullThree && "inset 0 0 0 1000px rgba(0, 0, 0, .20)",
   };
   const pictureFullStylingFour = {
     position: fullFour && "absolute",
@@ -120,6 +139,8 @@ function Home() {
     top: fullFour && "0px",
     width: fullFour && "50%",
     marginLeft: fullFour && "0%",
+    zIndex: fullFour && "500",
+    boxShadow: fullFour && "inset 0 0 0 1000px rgba(0, 0, 0, .20)",
   };
   const pictureFullStylingFive = {
     position: fullFive && "absolute",
@@ -127,6 +148,8 @@ function Home() {
     top: fullFive && "0px",
     width: fullFive && "50%",
     marginLeft: fullFive && "0%",
+    zIndex: fullFive && "500",
+    boxShadow: fullFive && "inset 0 0 0 1000px rgba(0, 0, 0, .20)",
   };
   const pictureFullStylingSix = {
     position: fullSix && "absolute",
@@ -134,6 +157,8 @@ function Home() {
     top: fullSix && "0px",
     width: fullSix && "50%",
     marginLeft: fullSix && "0%",
+    zIndex: fullSix && "500",
+    boxShadow: fullSix && "inset 0 0 0 1000px rgba(0, 0, 0, .20)",
   };
   const pictureFullStylingSeven = {
     position: fullSeven && "absolute",
@@ -141,6 +166,8 @@ function Home() {
     top: fullSeven && "0px",
     width: fullSeven && "50%",
     marginLeft: fullSeven && "0%",
+    zIndex: fullSeven && "500",
+    boxShadow: fullSeven && "inset 0 0 0 1000px rgba(0, 0, 0, .20)",
   };
   const pictureFullStylingEight = {
     position: fullEight && "absolute",
@@ -148,6 +175,8 @@ function Home() {
     top: fullEight && "0px",
     width: fullEight && "50%",
     marginLeft: fullEight && "0%",
+    zIndex: fullEight && "500",
+    boxShadow: fullEight && "inset 0 0 0 1000px rgba(0, 0, 0, .20)",
   };
   const pictureFullStylingNine = {
     position: fullNine && "absolute",
@@ -155,6 +184,8 @@ function Home() {
     top: fullNine && "0px",
     width: fullNine && "50%",
     marginLeft: fullNine && "0%",
+    zIndex: fullNine && "500",
+    boxShadow: fullNine && "inset 0 0 0 1000px rgba(0, 0, 0, .20)",
   };
   const pictureFullStylingTen = {
     position: fullTen && "absolute",
@@ -162,6 +193,8 @@ function Home() {
     top: fullTen && "0px",
     width: fullTen && "50%",
     marginLeft: fullTen && "0%",
+    zIndex: fullTen && "500",
+    boxShadow: fullTen && "inset 0 0 0 1000px rgba(0, 0, 0, .20)",
   };
 
   return (
@@ -398,6 +431,30 @@ function Home() {
           onClick={() => setFullTen(true)}
           style={pictureFullStylingTen}
         ></div>
+        {fullOne && <div className="one-outer"></div>}
+        {fullTwo && <div className="two-outer"></div>}
+        {fullThree && <div className="three-outer"></div>}
+        {fullFour && <div className="four-outer"></div>}
+        {fullFive && <div className="five-outer"></div>}
+        {fullSix && <div className="six-outer"></div>}
+        {fullSeven && <div className="seven-outer"></div>}
+        {fullEight && <div className="eight-outer"></div>}
+        {fullNine && <div className="nine-outer"></div>}
+        {fullTen && <div className="ten-outer"></div>}
+        {fullOne ||
+        fullTwo ||
+        fullThree ||
+        fullFour ||
+        fullFive ||
+        fullSix ||
+        fullSeven ||
+        fullEight ||
+        fullNine ||
+        fullTen ? (
+          <div className="back-button" onClick={handleBackButtonClick}>
+            <BsArrowUpRight className="back-button-arrow" />
+          </div>
+        ) : null}
       </div>
     </>
   );
