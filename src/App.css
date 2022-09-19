@@ -159,7 +159,7 @@ body {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  position: fixed;
+  position: absolute;
   left: 150px;
   margin-top: -100px;
   transition: 1s ease-in-out;
@@ -219,7 +219,7 @@ body {
 .button {
   position: fixed;
   left: 160px;
-  top: 700px;
+  top: 70%;
   height: 25px;
   width: 25px;
   color: rgb(196, 196, 196);
@@ -271,7 +271,7 @@ body {
   width: 640px;
   height: 70px;
   background-color: rgba(172, 255, 47, 0.247);
-  position: absolute;
+  position: fixed;
   right: 0px;
   top: 455px;
   z-index: 4;
@@ -280,7 +280,7 @@ body {
   width: 940px;
   height: 150px;
   background-color: rgba(47, 206, 255, 0.247);
-  position: absolute;
+  position: fixed;
   right: 0px;
   top: 700px;
   z-index: 2;
@@ -495,8 +495,192 @@ body {
   opacity: 0;
 }
 
-@media screen and (max-width: 1890px) {
-  . {
-    margin-bottom: 20px;
+@media screen and (max-width: 1600px) {
+  .sculpture {
+    transform: scale(0.9) translateX(200px);
+    transform-origin: top;
+  }
+  .nav-middle {
+    position: absolute;
+    top: 50px;
+    left: 100px;
+    width: 300px;
+  }
+  .header {
+    font-size: 50px;
+    width: 70%;
+    margin-left: -60px;
+  }
+  .sub-header {
+    font-size: 18px;
+    width: 70%;
+    margin-left: -60px;
+  }
+  .green-accent {
+    top: 420px;
+    width: 550px;
+  }
+  .blue-accent {
+    top: 600px;
+    width: 800px;
+  }
+  .button {
+    top: 70%;
+    left: 100px;
   }
 }
+@media screen and (max-width: 1150px) {
+  .sculpture {
+    transform: scale(0.8) translateX(300px);
+    transform-origin: top;
+  }
+  .header {
+    font-size: 40px;
+    width: 70%;
+    margin-left: -100px;
+    padding-right: 100px;
+  }
+  .sub-header {
+    font-size: 16px;
+    width: 300px;
+    position: fixed;
+    top: 57%;
+    margin-left: -100px;
+  }
+  .green-accent {
+    top: 370px;
+    width: 450px;
+  }
+  .blue-accent {
+    top: 600px;
+    width: 600px;
+  }
+  .background-text {
+    width: 700px;
+    height: 700px;
+  }
+  .button {
+    top: 70%;
+    left: 50px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .sculpture {
+    transform: scale(0.6) translateX(600px) translateY(450px);
+    transform-origin: top;
+  }
+  .header {
+    font-size: 30px;
+    width: 65%;
+    position: absolute;
+    top: -10%;
+    margin-left: -100px;
+    padding-right: 100px;
+  }
+  .left-banner {
+    width: 300px;
+  }
+  .sub-header {
+    font-size: 14px;
+    width: 200px;
+    position: fixed;
+    top: 50%;
+    margin-left: -100px;
+  }
+  .green-accent {
+    top: 540px;
+    width: 350px;
+    height: 50px;
+  }
+  .blue-accent {
+    top: 700px;
+    width: 500px;
+    height: 100px;
+  }
+  .background-text {
+    width: 500px;
+    height: 500px;
+    top: 545px;
+  }
+  .button {
+    width: 15px;
+    height: 15px;
+    top: 70%;
+    left: 50px;
+  }
+  .logo {
+    margin-left: 50px;
+  }
+  .icon {
+    margin-top: -10%;
+    margin-left: -10%;
+    width: 110%;
+    height: 110%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .sculpture {
+    transform: scale(0.4) translateX(900px) translateY(550px);
+    transform-origin: top;
+  }
+  .header {
+    font-size: 30px;
+    width: 65%;
+    position: absolute;
+    top: 0%;
+    margin-left: -100px;
+    padding-right: 100px;
+    margin-top: 40%;
+  }
+  .left-banner {
+    width: 300px;
+    align-items: flex-start;
+  }
+  .sub-header {
+    font-size: 10px;
+    width: 150px;
+    position: fixed;
+    top: 25%;
+    margin-left: -100px;
+  }
+  .green-accent {
+    top: 390px;
+    width: 400px;
+    height: 50px;
+  }
+  .blue-accent {
+    top: 500px;
+    width: 480px;
+    height: 90px;
+  }
+  .background-text {
+    width: 400px;
+    height: 400px;
+    top: 235px;
+    left: 0px;
+  }
+  .button {
+    width: 15px;
+    height: 15px;
+    top: 33%;
+    left: 50px;
+  }
+  .logo {
+    margin-left: 50px;
+  }
+  .icon {
+    margin-top: -10%;
+    margin-left: -10%;
+    width: 110%;
+    height: 110%;
+  }
+  .nav-middle {
+    width: 200px;
+    margin-left: 60px;
+  }
+}
+
+/* @media (max-width: 1600px) {
+  transform: scale(0.8) translateX(200px);
+  transform-origin: top;
+} */

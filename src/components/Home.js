@@ -405,6 +405,8 @@ function Home() {
           <div className="blue-accent"></div>
         </div>
       </div>
+
+      {/* art gallery  */}
       <div className={myClicked ? "art-outer-after" : "art-outer-before"}>
         <div
           className={
