@@ -3,6 +3,10 @@ import React, { useState } from "react";
 import { BsArrowUpRight } from "react-icons/bs";
 
 function Home() {
+  const [home, setHome] = useState(true);
+  const [about, setAbout] = useState(false);
+  const [contact, setContact] = useState(false);
+
   const [myClicked, setMyClicked] = useState(false);
   const [myClickedLoaded, setMyClickedLoaded] = useState(false);
   const [myClickedLoadedTwo, setMyClickedLoadedTwo] = useState(false);
@@ -36,6 +40,9 @@ function Home() {
   }
 
   const handleLogoClick = () => {
+    setHome(true);
+    setContact(false);
+
     setMyClicked(false);
     setMyClickedLoaded(false);
     setMyClickedLoadedTwo(false);
@@ -61,6 +68,7 @@ function Home() {
   };
   const handleButtonClick = () => {
     setMyClicked(true);
+    setContact(false);
     setTimeout(() => {
       setMyClickedLoaded(true);
     }, 1000);
@@ -104,6 +112,13 @@ function Home() {
     setFullEight(false);
     setFullNine(false);
     setFullTen(false);
+  };
+
+  const handleContactUsClick = () => {
+    setHome(false);
+    setTimeout(() => {
+      setContact(true);
+    }, 0);
   };
 
   const pictureFullStylingOne = {
@@ -308,7 +323,10 @@ function Home() {
         diam maecenas ultricies. Risus commodo viverra maecenas accumsan lacus
         vel.
       </div>
-      <div className="button" onClick={handleButtonClick}>
+      <div
+        className={home ? "button" : "button-home-false"}
+        onClick={handleButtonClick}
+      >
         <BsArrowUpRight className="icon" />
       </div>
       <div className="cursor"></div>
@@ -319,23 +337,40 @@ function Home() {
             Art<br></br> Gallery
           </div>
           <div className="nav-middle">
-            <div className="about nav-links">About</div>
+            <div className="about nav-links" onClick={() => setContact(false)}>
+              About
+            </div>
             <div className="art" onClick={handleButtonClick}>
               Art
             </div>
-            <div className="contact-us">Contact Us</div>
+            <div className="contact-us" onClick={handleContactUsClick}>
+              Contact Us
+            </div>
           </div>
         </nav>
 
-        <div className="left-banner">
-          <div className="left-inner-banner">
+        <div className={home ? "left-banner" : "home-false"}>
+          <div className={home ? "left-inner-banner" : "banner-false"}>
             <div className="header">Explore Art around the world</div>
             <div className="sub-header">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt{" "}
+              eiusmod tempor incididunt {JSON.stringify(contact)}
             </div>
           </div>
         </div>
+        {/* <div className="left-banner-absolute"></div> */}
+        <div className={contact ? "contact-banner-outer" : "cbo-f"}>
+          <div className={contact ? "contact-banner-inner" : "cbi-f"}>
+            <div className="header">Contact us</div>
+            <div className="sub-header">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt <br></br>
+              <br></br>
+              {JSON.stringify(contact)}
+            </div>
+          </div>
+        </div>
+
         <div className="right-banner">
           <div className="green-accent"></div>
           <div className="blue-accent"></div>

@@ -105,6 +105,53 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: 1.5s;
+}
+.left-banner-absolute {
+  width: 37%;
+  height: 100%;
+  background-color: rgb(5, 5, 5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 1.5s;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+}
+.contact-banner-outer {
+  width: 37%;
+  height: 100%;
+  background-color: rgb(5, 5, 5);
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 1s ease-in-out;
+}
+.cbo-f {
+  width: 0px;
+  height: 100%;
+  background-color: rgb(5, 5, 5);
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 1s ease-in-out;
+}
+.home-false {
+  width: 0%;
+  height: 100%;
+  background-color: rgb(5, 5, 5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 1.5s ease-in-out;
 }
 .left-inner-banner {
   width: 450px;
@@ -115,6 +162,40 @@ body {
   position: fixed;
   left: 150px;
   margin-top: -100px;
+  transition: 1s ease-in-out;
+}
+.contact-banner-inner {
+  width: 450px;
+  height: 40%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  position: fixed;
+  left: 150px;
+  margin-top: -100px;
+  transition: 1s ease-in-out;
+}
+.banner-false {
+  width: 450px;
+  height: 40%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  position: fixed;
+  left: -650px;
+  margin-top: -100px;
+  transition: 1s ease-in-out;
+}
+.cbi-f {
+  width: 450px;
+  height: 40%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  position: fixed;
+  left: -500px;
+  margin-top: -100px;
+  transition: 1s ease-in-out;
 }
 .header,
 .sub-header {
@@ -149,7 +230,24 @@ body {
   z-index: 100;
   transition: 0.3s;
   box-shadow: 0px 0px 10px 1px #474747;
-  transition: 0.3s ease-in-out;
+  transition: 0.6s ease-in-out;
+  background-color: rgb(5, 5, 5);
+}
+.button-home-false {
+  position: fixed;
+  left: -460px;
+  top: 700px;
+  height: 25px;
+  width: 25px;
+  color: rgb(196, 196, 196);
+  transform: rotate(30deg);
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 15px;
+  z-index: 100;
+  transition: 0.3s;
+  box-shadow: 0px 0px 10px 1px #474747;
+  transition: 1s ease-in-out;
   background-color: rgb(5, 5, 5);
 }
 
