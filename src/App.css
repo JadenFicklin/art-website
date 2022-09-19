@@ -618,6 +618,53 @@ body {
     height: 110%;
   }
 }
+@media screen and (max-width: 500px) {
+  .header {
+    font-size: 30px;
+    width: 65%;
+    position: absolute;
+    top: -30%;
+    margin-left: -100px;
+    padding-right: 100px;
+  }
+  .sub-header {
+    font-size: 14px;
+    width: 200px;
+    position: fixed;
+    top: 36%;
+    margin-left: -100px;
+  }
+  .green-accent {
+    top: 540px;
+    width: 350px;
+    height: 50px;
+  }
+  .blue-accent {
+    top: 700px;
+    width: 500px;
+    height: 100px;
+  }
+  .background-text {
+    width: 500px;
+    height: 500px;
+    top: 545px;
+  }
+  .button {
+    width: 15px;
+    height: 15px;
+    top: 50%;
+    left: 50px;
+  }
+  .logo {
+    margin-left: 50px;
+  }
+  .icon {
+    margin-top: -10%;
+    margin-left: -10%;
+    width: 110%;
+    height: 110%;
+  }
+}
 
 @media screen and (max-width: 400px) {
   .sculpture {
