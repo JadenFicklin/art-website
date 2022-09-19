@@ -431,16 +431,226 @@ function Home() {
           onClick={() => setFullTen(true)}
           style={pictureFullStylingTen}
         ></div>
-        {fullOne && <div className="one-outer"></div>}
-        {fullTwo && <div className="two-outer"></div>}
-        {fullThree && <div className="three-outer"></div>}
-        {fullFour && <div className="four-outer"></div>}
-        {fullFive && <div className="five-outer"></div>}
-        {fullSix && <div className="six-outer"></div>}
-        {fullSeven && <div className="seven-outer"></div>}
-        {fullEight && <div className="eight-outer"></div>}
-        {fullNine && <div className="nine-outer"></div>}
-        {fullTen && <div className="ten-outer"></div>}
+        {fullOne && (
+          <div className="one-outer">
+            <div className="box">
+              <p className="box-name">Jacopo Della Quercia</p>
+              <p className="box-header">San Petronio</p>
+              <p className="box-subtext">
+                On 28 March 1425 Jacopo della Quercia was commissioned to design
+                a complicated portal for the west façade of San Petronio, a late
+                medieval church, located in the very heart of the papal states.
+                He produced a design for a round-arched entranceway framed by
+                historiated pilasters with Old Testament reliefs, eighteen busts
+                of prophets, five New Testament reliefs in the architrave above
+                the door, decorative colonnettes and a lunette above the door
+                containing free-standing statues of the Virgin and Child, St
+                Petronius and the patron, Cardinal Lodovico Alemanno, papal
+                legate to Bologna. The Virgin and Child, the prophet busts, the
+                lintel reliefs and the colonnettes were all carved first, during
+                the period 1426-September 1428, while the Old Testament scenes
+                and St Petronius were added in 1429/30.
+              </p>
+            </div>
+          </div>
+        )}
+        {fullTwo && (
+          <div className="two-outer">
+            <div className="box">
+              <p className="box-name">Ecstasy of Saint Teresa</p>
+              <p className="box-header">Bernini</p>
+              <p className="box-subtext">
+                The Ecstasy of Saint Teresa (also known as Saint Teresa in
+                Ecstasy or the Transverberation of Saint Teresa; Italian:
+                L'Estasi di Santa Teresa or Santa Teresa in estasi) is a
+                sculptural group in white marble set in an elevated aedicule in
+                the Cornaro Chapel of the church of Santa Maria della Vittoria
+                in Rome. It was designed and completed by Gian Lorenzo Bernini,
+                the leading sculptor of his day, who also designed the setting
+                of the Chapel in marble, stucco and paint. It is generally
+                considered to be one of the sculptural masterpieces of the High
+                Roman Baroque. The sculpture depicts Teresa of Ávila, a Spanish
+                Carmelite nun and saint, swooning in a state of religious
+                ecstasy, while an angel holding a spear stands over her.
+              </p>
+            </div>
+          </div>
+        )}
+        {fullThree && (
+          <div className="three-outer">
+            <div className="box">
+              <p className="box-name">Equestrian Statue</p>
+              <p className="box-header">Leonardo da Vinci</p>
+              <p className="box-subtext">
+                Leonardo's Horse (also known as the Sforza Horse or the Gran
+                Cavallo ("Great Horse") ) is a project for a bronze sculpture
+                that was commissioned from Leonardo da Vinci in 1482 by the Duke
+                of Milan Ludovico il Moro, but never completed. It was intended
+                to be the largest equestrian statue in the world, a monument to
+                the duke's father Francesco Sforza. Leonardo did extensive
+                preparatory work for it but produced only a large clay model,
+                which was later destroyed.
+              </p>
+            </div>
+          </div>
+        )}
+        {fullFour && (
+          <div className="four-outer">
+            <div className="box">
+              <p className="box-name">pieta</p>
+              <p className="box-header">Michelangelo</p>
+              <p className="box-subtext">
+                The Pietà (Italian: [pjeˈta]; 1498–1499) is a key work of
+                Italian Renaissance sculpture by Michelangelo Buonarroti, now in
+                St. Peter's Basilica, Vatican City. It is the first of a number
+                of works of the same subject by the artist. The statue was
+                commissioned for the French Cardinal Jean de Bilhères, who was
+                the French ambassador in Rome. The sculpture, in Carrara marble,
+                was made for the cardinal's funeral monument, but was moved to
+                its current location, the first chapel on the north side after
+                the entrance of the basilica, in the 18th century.[1] It is the
+                only piece Michelangelo ever signed.
+              </p>
+            </div>
+          </div>
+        )}
+        {fullFive && (
+          <div className="five-outer">
+            <div className="box">
+              <p className="box-name">Michele</p>
+              <p className="box-header">Caliani</p>
+              <p className="box-subtext">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Pellentesque habitant morbi tristique senectus. Et malesuada
+                fames ac turpis egestas maecenas. Id volutpat lacus laoreet non.
+                Sed vulputate mi sit amet mauris commodo quis imperdiet. Eu
+                feugiat pretium nibh ipsum consequat nisl vel pretium lectus.
+                Consectetur libero id faucibus nisl tincidunt. Platea dictumst
+                vestibulum rhoncus est pellentesque elit ullamcorper dignissim
+                cras. Velit laoreet id donec ultrices tincidunt arcu non
+                sodales. Purus sit amet luctus venenatis lectus magna fringilla.
+                At quis risus sed vulputate odio ut. Egestas pretium aenean
+                pharetra magna ac. Ullamcorper eget nulla facilisi etiam. Eu
+                lobortis elementum nibh tellus molestie nunc. Id semper risus in
+                hendrerit gravida rutrum quisque non tellus.
+              </p>
+            </div>
+          </div>
+        )}
+        {fullSix && (
+          <div className="six-outer">
+            <div className="box">
+              <p className="box-name">Nike</p>
+              <p className="box-header">Pythokritos</p>
+              <p className="box-subtext">
+                The Winged Victory of Samothrace, or the Nike of Samothrace,[2]
+                is a votive monument originally found on the island of
+                Samothrace, north of the Aegean Sea. It is a masterpiece of
+                Greek sculpture from the Hellenistic era, dating from the
+                beginning of the 2nd century BCE. It is composed of a statue
+                representing the goddess Niké (Victory), whose head and arms are
+                missing, and its base in the shape of a ship's bow. The total
+                height of the monument is 5.57 meters including the socle; the
+                statue alone measures 2.75 meters. The sculpture is one of a
+                small number of major Hellenistic statues surviving in the
+                original, rather than Roman copies. Winged Victory has been
+                exhibited at the Louvre Museum in Paris, at the top of the main
+                staircase, since 1884.[3]
+              </p>
+            </div>
+          </div>
+        )}
+        {fullSeven && (
+          <div className="seven-outer">
+            <div className="box">
+              <p className="box-name">pieta</p>
+              <p className="box-header">Michelangelo</p>
+              <p className="box-subtext">
+                The Pietà (Italian: [pjeˈta]; 1498–1499) is a key work of
+                Italian Renaissance sculpture by Michelangelo Buonarroti, now in
+                St. Peter's Basilica, Vatican City. It is the first of a number
+                of works of the same subject by the artist. The statue was
+                commissioned for the French Cardinal Jean de Bilhères, who was
+                the French ambassador in Rome. The sculpture, in Carrara marble,
+                was made for the cardinal's funeral monument, but was moved to
+                its current location, the first chapel on the north side after
+                the entrance of the basilica, in the 18th century.[1] It is the
+                only piece Michelangelo ever signed.
+              </p>
+            </div>
+          </div>
+        )}
+        {fullEight && (
+          <div className="eight-outer">
+            <div className="box">
+              <p className="box-name">Trevi Fountain</p>
+              <p className="box-header">Bernini</p>
+              <p className="box-subtext">
+                The Trevi Fountain (Italian: Fontana di Trevi) is an
+                18th-century fountain in the Trevi district in Rome, Italy,
+                designed by Italian architect Nicola Salvi and completed by
+                Giuseppe Pannini and several others. Standing 26.3 metres (86
+                ft) high and 49.15 metres (161.3 ft) wide,[1] it is the largest
+                Baroque fountain in the city and one of the most famous
+                fountains in the world. The fountain has appeared in several
+                films, including Roman Holiday (1953); Three Coins in the
+                Fountain (1954); Federico Fellini's classic, La Dolce Vita
+                (1960); Sabrina Goes to Rome (1998); and The Lizzie McGuire
+                Movie (2003).[2]
+              </p>
+            </div>
+          </div>
+        )}
+        {fullNine && (
+          <div className="nine-outer">
+            <div className="box">
+              <p className="box-name">unkown</p>
+              <p className="box-header">unknown</p>
+              <p className="box-subtext">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Pellentesque habitant morbi tristique senectus. Et malesuada
+                fames ac turpis egestas maecenas. Id volutpat lacus laoreet non.
+                Sed vulputate mi sit amet mauris commodo quis imperdiet. Eu
+                feugiat pretium nibh ipsum consequat nisl vel pretium lectus.
+                Consectetur libero id faucibus nisl tincidunt. Platea dictumst
+                vestibulum rhoncus est pellentesque elit ullamcorper dignissim
+                cras. Velit laoreet id donec ultrices tincidunt arcu non
+                sodales. Purus sit amet luctus venenatis lectus magna fringilla.
+                At quis risus sed vulputate odio ut. Egestas pretium aenean
+                pharetra magna ac. Ullamcorper eget nulla facilisi etiam. Eu
+                lobortis elementum nibh tellus molestie nunc. Id semper risus in
+                hendrerit gravida rutrum quisque non tellus.
+              </p>
+            </div>
+          </div>
+        )}
+        {fullTen && (
+          <div className="ten-outer">
+            <div className="box">
+              <p className="box-name">Stories of Joseph</p>
+              <p className="box-header">Lorenzo Ghiberti</p>
+              <p className="box-subtext">
+                A panel from the east doors of Florence’s Baptistery of San
+                Giovanni. Made from 1425 CE by Lorenzo Ghiberti (1378-1455 CE).
+                Gilded bronze. This panel shows the story of Joseph and his
+                brothers. The artist Michelangelo gave the doors the nickname
+                the 'Gates of Paradise' such was the craftsmanship evident in
+                their production. Lorenzo Ghiberti trained as a goldsmith and
+                sculptor, he established an important workshop for sculpture in
+                metal. His book of Commentarii contains important writing on
+                art, as well as what may be the earliest surviving autobiography
+                by any artist. Ghiberti's career was dominated by his two
+                successive commissions for pairs of bronze doors to the Florence
+                Baptistery (Battistero di San Giovanni). They are recognized as
+                a major masterpiece of the Early Renaissance, and were famous
+                and influential from their unveiling.
+              </p>
+            </div>
+          </div>
+        )}
+
         {fullOne ||
         fullTwo ||
         fullThree ||
