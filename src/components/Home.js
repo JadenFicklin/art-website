@@ -1,8 +1,11 @@
 import Spline from "@splinetool/react-spline";
 import React, { useState } from "react";
 import { BsArrowUpRight } from "react-icons/bs";
+import PacmanLoader from "react-spinners/PacmanLoader";
 
 function Home() {
+  const [start, setStart] = useState(true);
+
   const [home, setHome] = useState(true);
   const [about, setAbout] = useState(false);
   const [contact, setContact] = useState(false);
@@ -222,8 +225,14 @@ function Home() {
     boxShadow: fullTen && "inset 0 0 0 1000px rgba(0, 0, 0, .20)",
   };
 
+  setTimeout(() => {
+    setStart(false);
+  }, 1000);
   return (
     <>
+      <div className={start ? "start-animation" : "start-animation-false"}>
+        <PacmanLoader color={"white"} start={start} size={50} />
+      </div>
       <Spline
         scene="https://prod.spline.design/1ZSN0NOpjyVsaPIf/scene.splinecode"
         className="sculpture"
@@ -340,7 +349,6 @@ function Home() {
         <BsArrowUpRight className="icon" />
       </div>
       <div className="cursor"></div>
-
       <div className="home-outer">
         <nav className="nav">
           <div className="logo" onClick={handleLogoClick}>
@@ -395,7 +403,6 @@ function Home() {
           <div className="blue-accent"></div>
         </div>
       </div>
-
       <div className={myClicked ? "art-outer-after" : "art-outer-before"}>
         <div
           className={
