@@ -15,6 +15,17 @@ function Home() {
   const [myClickedLoadedNine, setMyClickedLoadedNine] = useState(false);
   const [myClickedLoadedTen, setMyClickedLoadedTen] = useState(false);
 
+  const [fullOne, setFullOne] = useState(false);
+  const [fullTwo, setFullTwo] = useState(false);
+  const [fullThree, setFullThree] = useState(false);
+  const [fullFour, setFullFour] = useState(false);
+  const [fullFive, setFullFive] = useState(false);
+  const [fullSix, setFullSix] = useState(false);
+  const [fullSeven, setFullSeven] = useState(false);
+  const [fullEight, setFullEight] = useState(false);
+  const [fullNine, setFullNine] = useState(false);
+  const [fullTen, setFullTen] = useState(false);
+
   // mouse functionality
   let mouseCursor = document.querySelector(".cursor");
 
@@ -36,6 +47,17 @@ function Home() {
     setMyClickedLoadedEight(false);
     setMyClickedLoadedNine(false);
     setMyClickedLoadedTen(false);
+
+    setFullOne(false);
+    setFullTwo(false);
+    setFullThree(false);
+    setFullFour(false);
+    setFullFive(false);
+    setFullSix(false);
+    setFullSeven(false);
+    setFullEight(false);
+    setFullNine(false);
+    setFullTen(false);
   };
   const handleButtonClick = () => {
     setMyClicked(true);
@@ -69,6 +91,77 @@ function Home() {
     setTimeout(() => {
       setMyClickedLoadedTen(true);
     }, 1900);
+  };
+
+  const pictureFullStylingOne = {
+    position: fullOne && "absolute",
+    left: fullOne && "0px",
+    top: fullOne && "0px",
+    width: fullOne && "50%",
+    marginLeft: fullOne && "0%",
+  };
+  const pictureFullStylingTwo = {
+    position: fullTwo && "absolute",
+    left: fullTwo && "0px",
+    top: fullTwo && "0px",
+    width: fullTwo && "50%",
+    marginLeft: fullTwo && "0%",
+  };
+  const pictureFullStylingThree = {
+    position: fullThree && "absolute",
+    left: fullThree && "0px",
+    top: fullThree && "0px",
+    width: fullThree && "50%",
+    marginLeft: fullThree && "0%",
+  };
+  const pictureFullStylingFour = {
+    position: fullFour && "absolute",
+    left: fullFour && "0px",
+    top: fullFour && "0px",
+    width: fullFour && "50%",
+    marginLeft: fullFour && "0%",
+  };
+  const pictureFullStylingFive = {
+    position: fullFive && "absolute",
+    left: fullFive && "0px",
+    top: fullFive && "0px",
+    width: fullFive && "50%",
+    marginLeft: fullFive && "0%",
+  };
+  const pictureFullStylingSix = {
+    position: fullSix && "absolute",
+    left: fullSix && "0px",
+    top: fullSix && "0px",
+    width: fullSix && "50%",
+    marginLeft: fullSix && "0%",
+  };
+  const pictureFullStylingSeven = {
+    position: fullSeven && "absolute",
+    left: fullSeven && "0px",
+    top: fullSeven && "0px",
+    width: fullSeven && "50%",
+    marginLeft: fullSeven && "0%",
+  };
+  const pictureFullStylingEight = {
+    position: fullEight && "absolute",
+    left: fullEight && "0px",
+    top: fullEight && "0px",
+    width: fullEight && "50%",
+    marginLeft: fullEight && "0%",
+  };
+  const pictureFullStylingNine = {
+    position: fullNine && "absolute",
+    left: fullNine && "0px",
+    top: fullNine && "0px",
+    width: fullNine && "50%",
+    marginLeft: fullNine && "0%",
+  };
+  const pictureFullStylingTen = {
+    position: fullTen && "absolute",
+    left: fullTen && "0px",
+    top: fullTen && "0px",
+    width: fullTen && "50%",
+    marginLeft: fullTen && "0%",
   };
 
   return (
@@ -219,8 +312,10 @@ function Home() {
           className={
             myClickedLoaded
               ? "art-inner-after one"
-              : "art-inner-before after-one "
+              : "art-inner-before after-one"
           }
+          onClick={() => setFullOne(true)}
+          style={pictureFullStylingOne}
         ></div>
         <div
           className={
@@ -228,6 +323,8 @@ function Home() {
               ? "art-inner-after two"
               : "art-inner-before after-two "
           }
+          onClick={() => setFullTwo(true)}
+          style={pictureFullStylingTwo}
         ></div>
         <div
           className={
@@ -235,6 +332,8 @@ function Home() {
               ? "art-inner-after three"
               : "art-inner-before after-three "
           }
+          onClick={() => setFullThree(true)}
+          style={pictureFullStylingThree}
         ></div>
         <div
           className={
@@ -242,6 +341,8 @@ function Home() {
               ? "art-inner-after four"
               : "art-inner-before after-four "
           }
+          onClick={() => setFullFour(true)}
+          style={pictureFullStylingFour}
         ></div>
         <div
           className={
@@ -249,6 +350,8 @@ function Home() {
               ? "art-inner-after five"
               : "art-inner-before after-five "
           }
+          onClick={() => setFullFive(true)}
+          style={pictureFullStylingFive}
         ></div>
         <div
           className={
@@ -256,6 +359,8 @@ function Home() {
               ? "art-inner-after six"
               : "art-inner-before after-six "
           }
+          onClick={() => setFullSix(true)}
+          style={pictureFullStylingSix}
         ></div>
         <div
           className={
@@ -263,6 +368,8 @@ function Home() {
               ? "art-inner-after seven"
               : "art-inner-before after-seven "
           }
+          onClick={() => setFullSeven(true)}
+          style={pictureFullStylingSeven}
         ></div>
         <div
           className={
@@ -270,6 +377,8 @@ function Home() {
               ? "art-inner-after eight"
               : "art-inner-before after-eight "
           }
+          onClick={() => setFullEight(true)}
+          style={pictureFullStylingEight}
         ></div>
         <div
           className={
@@ -277,6 +386,8 @@ function Home() {
               ? "art-inner-after nine"
               : "art-inner-before after-nine "
           }
+          onClick={() => setFullNine(true)}
+          style={pictureFullStylingNine}
         ></div>
         <div
           className={
@@ -284,6 +395,8 @@ function Home() {
               ? "art-inner-after ten"
               : "art-inner-before after-ten "
           }
+          onClick={() => setFullTen(true)}
+          style={pictureFullStylingTen}
         ></div>
       </div>
     </>
