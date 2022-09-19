@@ -42,6 +42,7 @@ function Home() {
   const handleLogoClick = () => {
     setHome(true);
     setContact(false);
+    setAbout(false);
 
     setMyClicked(false);
     setMyClickedLoaded(false);
@@ -69,6 +70,7 @@ function Home() {
   const handleButtonClick = () => {
     setMyClicked(true);
     setContact(false);
+    setAbout(false);
     setTimeout(() => {
       setMyClickedLoaded(true);
     }, 1000);
@@ -116,8 +118,16 @@ function Home() {
 
   const handleContactUsClick = () => {
     setHome(false);
+    setAbout(false);
     setTimeout(() => {
       setContact(true);
+    }, 0);
+  };
+  const handleAboutClick = () => {
+    setHome(false);
+    setContact(false);
+    setTimeout(() => {
+      setAbout(true);
     }, 0);
   };
 
@@ -337,7 +347,7 @@ function Home() {
             Art<br></br> Gallery
           </div>
           <div className="nav-middle">
-            <div className="about nav-links" onClick={() => setContact(false)}>
+            <div className="about nav-links" onClick={handleAboutClick}>
               About
             </div>
             <div className="art" onClick={handleButtonClick}>
@@ -354,7 +364,7 @@ function Home() {
             <div className="header">Explore Art around the world</div>
             <div className="sub-header">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt {JSON.stringify(contact)}
+              eiusmod tempor incididunt
             </div>
           </div>
         </div>
@@ -366,7 +376,16 @@ function Home() {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt <br></br>
               <br></br>
-              {JSON.stringify(contact)}
+            </div>
+          </div>
+        </div>
+        <div className={about ? "contact-banner-outer" : "cbo-f"}>
+          <div className={about ? "contact-banner-inner" : "cbi-f"}>
+            <div className="header">About</div>
+            <div className="sub-header">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt <br></br>
+              <br></br>
             </div>
           </div>
         </div>
